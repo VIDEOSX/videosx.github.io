@@ -748,6 +748,21 @@ window.onload = function() {
   }
 };
 
+
+function redirect(url) {
+  var tag = url.substring(url.indexOf('#')); // Obtenemos el tag de la URL
+  if (tag) {
+    var tagName = tag.substring(1); // Eliminamos el símbolo '#' del nombre del tag
+    var currentTag = getCurrentTag();
+    
+    if (currentTag !== tagName) {
+      // Redireccionar solo si el tag actual es diferente al tag en la URL
+      changeMetaTags(tagName);
+      window.location.replace(url); // Redireccionamos a la URL completa
+    }
+  }
+}
+
 function getCurrentTag() {
   var currentTag = window.location.hash;
   if (currentTag) {
