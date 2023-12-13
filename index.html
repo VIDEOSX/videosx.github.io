@@ -2322,7 +2322,7 @@ const palabrasArray = palabras.split('\n').map(palabra => palabra.trim());
       const url = `videosx.github.io/#${palabra.trim().toLowerCase()}`;
 	   const word = `#${palabra.trim().toLowerCase()}`;
 	    const keywords = `#${palabra.trim().toLowerCase()}`;
-      const urlHTML = `<button onclick="window.location='https://${url}';" href="https://${url}"><span class="tag tag-pro tag-lg">${word}</button> `;
+      const urlHTML = `<button onclick="window.location='https://${url}';" ><span class="tag tag-pro tag-lg">${word}</button> `;
       urls += urlHTML;
     });
     const urlsContainer = document.getElementById('urlsContainer');
