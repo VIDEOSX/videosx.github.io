@@ -758,7 +758,7 @@ function redirect(url) {
     if (currentTag !== tagName) {
       // Redireccionar solo si el tag actual es diferente al tag en la URL
       changeMetaTags(tagName);
-      window.location.replace(url); // Redireccionamos a la URL completa
+      window.location.href = url; // Redireccionamos a la URL completa con el signo '#'
     }
   }
 }
@@ -769,6 +769,7 @@ function getCurrentTag() {
     return currentTag.substring(1); // Eliminamos el símbolo '#' del nombre del tag
   }
   return null;
+}l;
 }
 
 function changeMetaTags(nombre) {
