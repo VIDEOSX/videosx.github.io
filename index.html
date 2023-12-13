@@ -2327,7 +2327,7 @@ const palabrasArray = palabras.split('\n').map(palabra => palabra.trim());
     document.querySelector('meta[name="keywords"]').content = keywords;
     let urls = '';
     palabrasArray.forEach(palabra => {
-      const url = `videosx.github.io/#${palabra.trim().toLowerCase()}`;
+      const url = `videosx.github.io/?v=${palabra.trim().toLowerCase()}`;
 	   const word = `#${palabra.trim().toLowerCase()}`;
 	    const keywords = `#${palabra.trim().toLowerCase()}`;
       const urlHTML = `<a href="https://${url}"><span class="tag tag-pro tag-lg">${word}</a> `;
