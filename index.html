@@ -2330,7 +2330,7 @@ const palabrasArray = palabras.split('\n').map(palabra => palabra.trim());
       const url = `videosx.github.io/?v=${palabra.trim().toLowerCase()}`;
 	   const word = `#${palabra.trim().toLowerCase()}`;
 	    const keywords = `#${palabra.trim().toLowerCase()}`;
-      const urlHTML = `<a href="https://${url}"><span class="tag tag-pro tag-lg">${word}</a> `;
+      const urlHTML = `<a href="https://${url}" target="_blank"><span class="tag tag-pro tag-lg">${word}</a> `;
       urls += urlHTML;
     });
     const urlsContainer = document.getElementById('urlsContainer');
