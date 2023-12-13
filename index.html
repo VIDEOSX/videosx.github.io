@@ -733,14 +733,7 @@ h1.tag {
 <header><h1>Tags</h1></header>
 </head>
   <div id="urlsContainer"></div>
-   <script>
-function redirect(url) {
 
-$(location).attr('href', url);
-window.location.hash = "#about";
-location.reload();
-}
-  </script>
   <script>
     const palabras = `PornHub
 Xvideos
@@ -2318,6 +2311,9 @@ young-tits
 young-woman
 youth-porn
 zorra`;
+function redirect(url) {
+location.reload();
+}
 const palabrasArray = palabras.split('\n').map(palabra => palabra.trim());
     const keywords = palabrasArray.join(', ');
     document.querySelector('meta[name="keywords"]').content = keywords;
